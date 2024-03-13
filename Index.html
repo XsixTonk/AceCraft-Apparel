@@ -195,6 +195,17 @@
     <!-- Add more design images as needed -->
   </div>
   <button>See More</button>
+    <script>
+    $(document).ready(function() {
+      // Disable right-click on images within the designs class
+      $('.designs img').on('contextmenu', function(e) {
+        // Prevent the default context menu from appearing
+        e.preventDefault();
+        // Optionally, you can provide a message or perform another action
+        alert("Right-click disabled. Image downloading is not allowed.");
+      });
+    });
+  </script>
 </section>
 
 <!-- Contact section -->
